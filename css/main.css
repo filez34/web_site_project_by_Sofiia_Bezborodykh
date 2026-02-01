@@ -1,11 +1,24 @@
+/*header*/
+.nav_element{
+    display: inline-block;
+    padding-right: 0.5rem;
+}
+
 ul{
     list-style: none;
+    padding-left: 0px;
 }
 
 a {
     color: rgb(200, 30, 30);
 }
+/*text*/
 
-ul{
-    padding-left: 0px;
+/*main*/ 
+.featured_product{
+    width: 75%;
+}
+
+.product {
+    width: 30%;
 }
