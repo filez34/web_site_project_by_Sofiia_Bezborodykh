@@ -2,18 +2,52 @@
 .nav_element{
     display: inline-block;
     padding-right: 0.5rem;
+    margin: 0px;
 }
 
 ul{
     list-style: none;
     padding-left: 0px;
+    margin: 0px;
 }
 
 a {
-    color: rgb(200, 30, 30);
+    color: #0f1b21
+}
+/*main colors*/
+body{
+    background-color: #dde9e5;
+    margin: 0px;
+}
+
+footer{
+    background-color:#0f1b21;
+    color:#dde9e5
+}
+
+header {
+    background-color:#858f90;
+}
+.new_stuff_section{
+    background-color:#713030;
+}
+
+.white_text{
+    color: #dde9e5;
+    margin: 0px;
+}
+.white_text p {
+    margin-top: 3rem;
 }
 /*text*/
+*{
+    font-family:  "Bitcount Single", system-ui;
+    font-weight: 500;
+}
 
+.new_stuff_section h2 p{
+    font-weight: 900;
+}
 /*main*/ 
 .featured_product{
     width: 75%;
