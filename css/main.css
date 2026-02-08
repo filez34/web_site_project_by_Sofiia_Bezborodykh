@@ -14,6 +14,21 @@ ul{
 a {
     color: #0f1b21
 }
+
+/* grids */
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.flex_container{
+    display:flex;
+}
+
+
 /*main colors*/
 body{
     background-color: #dde9e5;
@@ -43,6 +58,7 @@ header {
 *{
     font-family:  "Bitcount Single", system-ui;
     font-weight: 500;
+    margin: 0;
 }
 
 .new_stuff_section h2 p{

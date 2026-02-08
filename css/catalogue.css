@@ -1,0 +1,17 @@
+/* grids */
+
+.body_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#catalogues{
+    display: grid;
+    grid: repeat();
+    gap:1rem;
+}
+
+/* text */
+.paragraph{
+ margin: 0;
+}
