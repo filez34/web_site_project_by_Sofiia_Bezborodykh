@@ -9,11 +9,8 @@
 }
 
 header{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    display: flex;
+    padding: 25px;
     background-color:#B7B5C1;
 }
 
@@ -32,26 +29,50 @@ body{
     grid-template-columns: 1fr;
 }
 
+/* ask if you can do it area style */
 .new_stuff_section{
+    padding: 40px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    padding: 1.75rem;
     background-color:#2D244D;
 }
 
 .wrapper_img{
     grid-column: 1;
 }
-
-.featured_product{
-   max-width: 100%;
-  height: auto;
-}
-
 .wrapper_new{
     grid-column: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a a a"
+    "1 2 3";
     color: #DDE9E5;
+}
+
+.a{
+    grid-area: a;
+}
+
+.imgsh{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.wawa{
+    grid-area: 1;
+}
+.wawb{
+    grid-area: 2;
+}
+.wawc{
+    grid-area: 3;
+}
+
+.featured_product{
+    max-width: 100%;
+    height: auto;
 }
 
 .new_stuff_section h2 p{
@@ -62,7 +83,6 @@ body{
     display:flex;
 }
 
-
 /*main colors*/
 body{
     background-color: #DDE9E5;
@@ -71,8 +91,10 @@ body{
 
 footer{
     background-color:#13071A;
-    color:#dde9e5
-}s
+    color:#dde9e5;
+    margin-top: 20px;
+    padding: 40px;
+}
 
 .white_text{
     color: #dde9e5;
@@ -89,6 +111,11 @@ footer{
 }
 /*images*/ 
 
+.carousel{
+    margin-top: 20px;
+padding-left: 40px;
+padding-right: 40px;
+}
 
 .product {
     width: 30%;
