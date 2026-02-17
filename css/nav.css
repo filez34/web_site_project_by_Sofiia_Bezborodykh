@@ -1,0 +1,21 @@
+.nav_element {
+  display: inline-block;
+}
+/*header*/
+.nav_element {
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  padding: 25px;
+  background-color: #b7b5c1;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  color: #0f1b21;
+}

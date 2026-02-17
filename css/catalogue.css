@@ -1,10 +1,39 @@
 /* grids */
+body {
+  background-color: #dde9e5;
+  margin: 0px;
+}
 
-#catalogues{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:20px;
-    padding: 40px;
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+#catalogues {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.3rem;
+  padding: 20px;
+}
+aside {
+  background-color: #b7b5c1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+
+aside ul {
+  padding-left: 0.75rem;
+  list-style: none;
+  margin: 0;
+}
+aside input {
+  width: 75%;
+  justify-self: auto;
+}
+.product {
+  max-width: 100%;
 }
 
 /* text */
