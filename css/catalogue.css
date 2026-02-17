@@ -19,8 +19,10 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  align-items: center;
   justify-content: flex-start;
-  gap: 0.3rem;
+  gap: 10px;
+  column-gap: 10px;
 }
 
 aside ul {
@@ -30,7 +32,7 @@ aside ul {
 }
 aside input {
   width: 75%;
-  justify-self: auto;
+  justify-self: center;
 }
 .product {
   max-width: 100%;

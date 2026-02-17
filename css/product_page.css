@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  background-color: #dde9e5;
+  grid-template-areas: ;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat();
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.product_info {
+  padding: 4vw;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.icon_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
