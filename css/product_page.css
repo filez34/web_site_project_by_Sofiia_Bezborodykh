@@ -1,16 +1,11 @@
-body {
-  display: grid;
-  background-color: #dde9e5;
-  grid-template-areas: ;
-  margin: 0;
-}
-
 main {
+  grid-column: main;
   display: grid;
   grid-template-rows: repeat();
 }
 
 aside {
+  grid-column: aside;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -19,12 +14,26 @@ aside {
 .product_info {
   padding: 4vw;
 }
+header {
+  grid-area: header;
+  background-color: #2d244d;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 75px 1fr;
+  grid-template-areas: "header header" "main aside";
+  grid-gap: 1rem;
+  background-color: #dde9e5;
+  margin: 0;
+}
 
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   margin: 0;
   list-style: none;
 }
@@ -32,6 +41,5 @@ nav ul {
 .icon_wrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 5px;
+  justify-content: center;
 }
