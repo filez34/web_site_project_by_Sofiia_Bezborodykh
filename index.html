@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- general ui ideas taken from https://www.fangamer.com/
-     and https://drgame.ru/-->
+     and and amazon/-->
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Latest merch for your favourite medias" />
     <meta />
+    <script src="js/main.js" defer></script>
     <base href="NerdsMerchAB" />
     <link rel="stylesheet" href="css/main.css" />
     <!--script-->
@@ -21,17 +22,13 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <div class="icon_wrap">
-            <a class="nav_element" href="product_page.html"
-              ><li>settings</li></a
-            >
-            <a class="nav_element" href="index.html"><li>for da nerds</li></a>
-            <a class="nav_element" href="catalogue.html">catalogue</a>
-          </div>
-          <input class="nav_element search" name="q" />
-          <a class="nav_element" href="shopping_cart.html"><li>cart</li></a>
-        </ul>
+        <section class="icon_wrap">
+          <a class="nav_element" href="product_page.html">settings</a>
+          <a class="nav_element" href="index.html">for da nerds</a>
+          <a class="nav_element" href="catalogue.html">catalogue</a>
+        </section>
+        <input class="nav_element search" name="q" />
+        <a class="nav_element" href="#">cart</a>
       </nav>
     </header>
     <main>
@@ -60,29 +57,51 @@
           /></a>
         </section>
       </section>
-      <section class="carousel">
+      <section class="promoted rows">
         <h2>best selling</h2>
-        <a href="product_page.html"
-          ><img class="product" src="images/sol cap.png" alt="product"
-        /></a>
-        <a href="product_page.html"
-          ><img class="product" src="images/sol cap.png" alt="product"
-        /></a>
-        <a href="product_page.html"
-          ><img class="product" src="images/sol cap.png" alt="product"
-        /></a>
-      </section>
-      <section class="carousel">
+        <article class="carousel">
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+        </section>
+        </article>
+      <section class="promoted rows">
         <h2>coming soon</h2>
-        <a href="product_page.html"
-          ><img class="product" src="images/sol cap.png" alt="product"
-        /></a>
-        <a href="product_page.html"
-          ><img class="product" src="images/sol cap.png" alt="product"
-        /></a>
-        <a href="product_page.html"
-          ><img class="product" src="images/sol cap.png" alt="product"
-        /></a>
+       <article class="carousel">
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+          <a href="product_page.html"
+            ><img class="product" src="images/sol cap.png" alt="product"
+          /></a>
+       </article>
       </section>
       <aside id="shopping cart"></aside>
     </main>

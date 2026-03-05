@@ -1,19 +1,34 @@
 main {
-  grid-column: main;
+  grid-area: main;
   display: grid;
   grid-template-rows: repeat();
+  padding: 2vw;
 }
 
 aside {
-  grid-column: aside;
+  grid-area: aside;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  align-items: center;
+  justify-content: start;
+  padding: 2vw;
+}
+
+.product_wrap {
 }
 
 .product_info {
-  padding: 4vw;
+margin-top: 2vw;
 }
+
+aside button {
+  display: color;
+  background-color: #2d244d;
+  height: 4rem;
+  width: 60%;
+  
+}
+
 header {
   grid-area: header;
   background-color: #2d244d;
@@ -22,20 +37,33 @@ header {
 body {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 75px 1fr;
+  grid-template-rows: 4rem repeat(1fr);
   grid-template-areas: "header header" "main aside";
-  grid-gap: 1rem;
+  grid-gap: 0.5vw;
   background-color: #dde9e5;
   margin: 0;
 }
 
-nav ul {
+@media screen and (max-width: 600px) {
+  body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem repeat(1fr);
+    grid-template-areas: "header" "main" "aside";
+    grid-gap: 1vw;
+  }
+}
+
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 2rem;
   margin: 0;
   list-style: none;
+}
+
+nav a {
+  color: white;
 }
 
 .icon_wrap {
