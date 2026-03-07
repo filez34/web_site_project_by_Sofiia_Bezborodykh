@@ -19,7 +19,7 @@ nav {
 }
 
 @media (max-width: 600px) {
-  nav{
+  nav {
     flex-direction: column;
     align-content: end;
   }
@@ -134,8 +134,7 @@ footer {
   justify-content: center;
 }
 
-@media screen and (max-width:600) {
-  
+@media screen and (max-width: 600) {
 }
 
 .product {
