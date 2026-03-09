@@ -35,6 +35,11 @@ aside button {
   height: 4rem;
   width: 60%;
   color: white;
+  border: none;
+}
+
+aside button:hover {
+  background-color: violet;
 }
 
 header {
