@@ -1,0 +1,38 @@
+:root {
+  --accent_color: #fef683;
+  --background_color: white;
+  --dark_element_color: #50373c;
+  --primary_element_color: #f0905c;
+  --secondary_element_color: #c25848;
+}
+
+body {
+  background-color: var(--primary_element_color);
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cart_item_container {
+  display: flex;
+  flex-direction: row;
+  height: 30vw;
+  justify-content: space-between;
+}
+
+.cart_item_container img {
+  max-width: 100%;
+  height: auto;
+  content: cover;
+}
+
+.product_container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2vw;
+  padding: 3vw;
+}

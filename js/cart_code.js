@@ -25,21 +25,3 @@ function removeAll() {
   localStorage.clear();
   product_container.innerHTML = "";
 }
-
-// const item_list = document.querySelector(".item_list");
-
-// create items based on the amount of stuff in array
-// for (let i = 0; i < cart.length; i++) {
-//   let picked_item = document.createElement("img");
-//   picked_item.style.width = "100%";
-//   picked_item.classList.add("product");
-//   product_container.appendChild(picked_item);
-// }
-
-// remove button to delete first item in array
-
-// remove_button.addEventListener("click", removeSelectedElement);
-// function removeSelectedElement() {
-//   all_items.shift();
-//   localStorage.setItem("picked", JSON.stringify(all_items));
-// }
