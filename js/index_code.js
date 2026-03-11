@@ -1,12 +1,3 @@
-const cart_button_popup = document.querySelector(".shopping_popup");
-
-cart_button_popup.addEventListener("click", cartPopupFunction);
-
-function cartPopupFunction() {
-  let popup = document.querySelector("#shopping_menu");
-  popup.classList.toggle("show");
-}
-
 const product_links = document.querySelectorAll(".product_link");
 
 product_links.forEach((link) => {

@@ -2,12 +2,21 @@
 body {
   background-color: #dde9e5;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
+
+html,
+body {
+  height: 100%;
+}
+
 #catalogues {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,6 +30,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 aside {
   background-color: #b7b5c1;
   display: flex;
@@ -30,6 +40,24 @@ aside {
   justify-content: flex-start;
   gap: 10px;
   column-gap: 10px;
+}
+
+:root {
+  --accent_color: #fef683;
+  --background_color: white;
+  --dark_element_color: #50373c;
+  --primary_element_color: #f0905c;
+  --secondary_element_color: #c25848;
+}
+
+body {
+  background-color: var(--background_color);
+}
+
+footer {
+  background-color: var(--dark_element_color);
+  color: var(--background_color);
+  padding: 3vw;
 }
 
 aside ul {

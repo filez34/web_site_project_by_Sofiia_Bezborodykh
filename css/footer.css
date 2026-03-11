@@ -1,0 +1,5 @@
+footer {
+  background-color: var(--dark_element_color);
+  color: var(--background_color);
+  padding: 3vw;
+}

@@ -36,12 +36,6 @@ body {
   background-color: var(--background_color);
 }
 
-footer {
-  background-color: var(--dark_element_color);
-  color: var(--background_color);
-  padding: 3vw;
-}
-
 .white_text {
   color: var(--background_color);
 }
@@ -70,57 +64,36 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-kerning: auto;
   font-size: clamp(1rem, 2vw, 1.2rem);
-}
-
-/*nav*/
-
-.nav_element {
-  display: inline-block;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2vw;
-  list-style: none;
-  background-color: var(--dark_element_color);
-}
-
-.icon_wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1vw;
-}
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-content: end;
-  }
-}
-
-nav a {
-  color: var(--background_color);
 }
 
 /* new stuff section */
 
 .new_stuff_section {
+  height: 35vh;
   padding: 3vw;
   display: grid;
   grid-gap: 2vw;
   grid-template-columns: 1fr 1fr;
   background-color: var(--secondary_element_color);
+  overflow: hidden;
 }
 
 .wrapper_img {
   grid-column: 1;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
+
+.wrapper_img img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 .wrapper_new {
   grid-template-rows: 1fr 1fr;
   grid-column: 2;
@@ -136,12 +109,30 @@ nav a {
 
 .a {
   grid-area: a;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.a p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .imgsh {
   max-width: 100%;
-  height: 100%;
+  max-height: 100%;
   object-fit: cover;
+  min-width: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .a {
+    gap: 2vw;
+  }
 }
 .wawa {
   grid-area: 1;
@@ -157,6 +148,7 @@ nav a {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  min-width: 0;
 }
 
 .new_stuff_section h2 p {
@@ -184,6 +176,10 @@ nav a {
   flex-direction: row;
   justify-content: center;
   gap: 1vw;
+}
+
+.product_link {
+  overflow: hidden;
 }
 
 .product {
