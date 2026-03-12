@@ -1,11 +1,3 @@
-:root {
-  --accent_color: #fef683;
-  --background_color: white;
-  --dark_element_color: #50373c;
-  --primary_element_color: #f0905c;
-  --secondary_element_color: #c25848;
-}
-
 html,
 body {
   height: 100%;
@@ -30,7 +22,8 @@ main {
 }
 
 .cart_item_container {
-  border: 0.5vh solid var(--secondary_element_color);
+  /* border: 0.5vh solid var(--secondary_element_color); */
+  background-color: var(--off_white_color);
   padding: 0.5vw;
   display: flex;
   flex-direction: row;

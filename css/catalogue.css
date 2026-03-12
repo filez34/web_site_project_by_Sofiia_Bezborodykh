@@ -1,6 +1,15 @@
+:root {
+  --accent_color: #fef683;
+  --background_color: white;
+  --dark_element_color: #50373c;
+  --primary_element_color: #f0905c;
+  --secondary_element_color: #c25848;
+  --off_white_color: rgb(240, 233, 233);
+}
+
 /* grids */
 body {
-  background-color: #dde9e5;
+  background-color: var(--background_color);
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -10,6 +19,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  flex: 1;
 }
 
 html,
@@ -24,7 +34,7 @@ body {
   padding: 20px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   #catalogues {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,43 +42,57 @@ body {
 }
 
 aside {
-  background-color: #b7b5c1;
+  background-color: var(--off_white_color);
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
+  align-items: self-start;
   justify-content: flex-start;
-  gap: 10px;
-  column-gap: 10px;
+  gap: 2vh;
+  padding: 1vw;
 }
 
-:root {
-  --accent_color: #fef683;
-  --background_color: white;
-  --dark_element_color: #50373c;
-  --primary_element_color: #f0905c;
-  --secondary_element_color: #c25848;
+#filter {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-body {
-  background-color: var(--background_color);
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 3vw, 1.6rem);
 }
 
-footer {
-  background-color: var(--dark_element_color);
-  color: var(--background_color);
-  padding: 3vw;
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: auto;
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 aside ul {
   padding-left: 0.75rem;
   list-style: none;
   margin: 0;
+  padding: 0%;
 }
-aside input {
-  width: 75%;
-  justify-self: center;
+
+.outer {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 3vw, 1.6rem);
 }
+
+.product_link {
+  display: inline-block;
+  width: 100%;
+}
+
 .product {
   max-width: 100%;
 }

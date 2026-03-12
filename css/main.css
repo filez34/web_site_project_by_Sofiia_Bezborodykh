@@ -30,6 +30,7 @@ main {
   --dark_element_color: #50373c;
   --primary_element_color: #f0905c;
   --secondary_element_color: #c25848;
+  --off_white_color: rgb(240, 233, 233);
 }
 
 body {
