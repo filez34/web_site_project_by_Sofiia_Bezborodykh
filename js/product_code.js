@@ -4,7 +4,8 @@ window.onload = function () {
 
   if (data) {
     document.querySelector(".product-image").src = data.img;
-    document.querySelector(".product_title").innerText = data.name;
+    document.querySelector(".product-image").alt = data.name;
+    document.querySelector(".product_title").innerHTML = data.name;
   } else {
     window.alert("No product data in localStorage!");
   }

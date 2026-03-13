@@ -1,13 +1,4 @@
-/* general */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
+/* general and grids */
 html,
 body {
   height: 100%;
@@ -26,12 +17,18 @@ main {
   flex-direction: column;
 }
 
-.white_text {
-  color: var(--background_color);
+li {
+  list-style: none;
 }
-.white_text p {
-  margin-top: 3vh;
+
+.product_link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
 }
+
 /*text*/
 
 * {
@@ -41,6 +38,8 @@ main {
   font-style: normal;
   font-kerning: auto;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -79,9 +78,15 @@ h3 {
   }
 }
 
-.wrapper_img {
-  grid-column: 1;
+.white_text {
+  color: var(--background_color);
 }
+.white_text p {
+  margin-top: 3vh;
+}
+/* the main image dissaooearing is not a bug, its a feature */
+
+/* main image part of new stuff */
 
 .featured_product {
   object-fit: cover;
@@ -90,22 +95,11 @@ h3 {
   height: 100%;
 }
 
-.product_link {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 5px;
+.wrapper_img {
+  grid-column: 1;
 }
 
-.imgsh {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  min-width: 0;
-}
-
+/* text and image sextion of new stuff */
 .wrapper_new {
   grid-template-rows: auto 1fr;
   grid-template-columns: repeat(3, 1fr);
@@ -117,9 +111,26 @@ h3 {
     "item1 item2 item3";
   color: var(--background_color);
 }
-
 /* featured product images */
+.imgsh {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  min-width: 0;
+}
 
+.wawa {
+  grid-area: item1;
+}
+.wawb {
+  grid-area: item2;
+}
+.wawc {
+  grid-area: item3;
+}
+
+/* featured product text */
 .a {
   grid-area: a;
   display: flex;
@@ -134,26 +145,11 @@ h3 {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-.wawa {
-  grid-area: item1;
-}
-.wawb {
-  grid-area: item2;
-}
-.wawc {
-  grid-area: item3;
-}
-
 .new_stuff_section h2 p {
   font-weight: 900;
 }
 
-.flex_container {
-  display: flex;
-}
-
-/*carousel*/
+/*promoted*/
 
 .promoted_container {
   display: flex;
@@ -174,12 +170,20 @@ h3 {
   margin-bottom: 0.5vh;
 }
 
+/* carousel rows */
 .carousel {
   display: flex;
   overflow-x: auto;
   flex-direction: row;
   justify-content: center;
   gap: 1vw;
+}
+
+.product {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -197,12 +201,4 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.product {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-  min-width: 0;
 }

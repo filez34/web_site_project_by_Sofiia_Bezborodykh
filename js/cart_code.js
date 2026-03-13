@@ -20,7 +20,7 @@ cart.forEach((item, index) => {
   let picked_product_name = cart_item_container.appendChild(
     document.createElement("p"), //adding name
   );
-  picked_product_name.innerText = item.name;
+  picked_product_name.innerHTML = item.name;
   let picked_product_remove_button = cart_item_container.appendChild(
     document.createElement("button"), //adding button
   );

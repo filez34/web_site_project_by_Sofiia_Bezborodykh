@@ -1,26 +1,36 @@
+/* general and grids */
 body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: minmax(0) 1fr 1fr;
+  grid-template-areas: "header header" "main aside" "footer footer";
   background-color: var(--background_color);
+  margin: 0;
 }
 
-footer {
-  background-color: var(--dark_element_color);
-  color: var(--background_color);
-  padding: 3vw;
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "aside" "footer";
+    grid-gap: 1vw;
+  }
 }
 
-.white_text {
-  color: var(--background_color);
+header {
+  grid-area: header;
 }
-.white_text p {
-  margin-top: 3vh;
+
+.footer_container {
+  grid-area: footer;
 }
+
 /*text*/
 h2 {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-size: clamp(1.4rem, 4vw, 2rem);
 }
 
 h3 {
@@ -28,7 +38,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(1rem, 3vw, 1.6rem);
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
 }
 
 * {
@@ -39,9 +49,7 @@ h3 {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-p {
-  font-size: 1.3rem;
-}
+/* main product part */
 main {
   grid-area: main;
   display: grid;
@@ -63,8 +71,8 @@ main {
   height: 100%;
 }
 
-.product_info {
-  margin-top: 2vw;
+p {
+  font-size: 1.3rem;
 }
 
 /* aside */
@@ -78,8 +86,12 @@ aside {
   background-color: var(--off_white_color);
 }
 
+.product_info {
+  margin-top: 2vw;
+}
+
+/* aside button */
 #add_to_cart {
-  display: color;
   background-color: var(--secondary_element_color);
   height: 4rem;
   width: 60%;
@@ -88,32 +100,7 @@ aside {
   border-radius: 5px;
 }
 
-aside button:hover {
+#add_to_cart:hover {
   background-color: var(--accent_color);
   color: var(--dark_element_color);
-}
-
-header {
-  grid-area: header;
-}
-
-.footer_container {
-  grid-area: footer;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: minmax(0) 1fr 1fr;
-  grid-template-areas: "header header" "main aside" "footer footer";
-  background-color: var(--background_color);
-  margin: 0;
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "aside" "footer";
-    grid-gap: 1vw;
-  }
 }

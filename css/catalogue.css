@@ -1,4 +1,4 @@
-/* grids */
+/* grids and general */
 body {
   background-color: var(--background_color);
   margin: 0px;
@@ -18,11 +18,47 @@ body {
   height: 100%;
 }
 
+/* general text */
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 3vw, 1.6rem);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: auto;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+/* catalogues section */
+
 #catalogues {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.3rem;
   padding: 20px;
+}
+
+.product_link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.product {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -39,6 +75,8 @@ body {
     width: 100%;
   }
 }
+
+/* aside */
 
 aside {
   background-color: var(--off_white_color);
@@ -66,23 +104,6 @@ aside {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-h3 {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: clamp(1rem, 3vw, 1.6rem);
-}
-
-* {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-kerning: auto;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-}
-
 aside ul {
   padding-left: 0.75rem;
   list-style: none;
@@ -97,20 +118,3 @@ aside ul {
   font-style: normal;
   font-size: clamp(1rem, 2vw, 1.6rem);
 }
-
-.product_link {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.product {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-}
-
-/* text */

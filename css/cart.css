@@ -1,3 +1,4 @@
+/* body grid and general organisation */
 html,
 body {
   height: 100%;
@@ -27,8 +28,16 @@ main {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-.button_container {
-  padding: 2vh;
+/* cart items styling */
+
+.product_container {
+  display: flex;
+  background-color: var(--off_white_color);
+  flex-direction: column-reverse;
+  gap: 1vh;
+  margin: 3vw;
+  height: auto;
+  justify-content: flex-start;
 }
 
 .cart_item_container {
@@ -65,14 +74,9 @@ main {
   border-radius: 5px;
 }
 
-.product_container {
-  display: flex;
-  background-color: var(--off_white_color);
-  flex-direction: column-reverse;
-  gap: 1vh;
-  margin: 3vw;
-  height: auto;
-  justify-content: flex-start;
+/* purchase container */
+.button_container {
+  padding: 2vh;
 }
 
 #purchase {
