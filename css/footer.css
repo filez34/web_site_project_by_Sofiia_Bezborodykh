@@ -1,5 +1,30 @@
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
   background-color: var(--dark_element_color);
   color: var(--background_color);
-  padding: 3vw;
+  padding: 2vw;
+}
+
+footer ul li{
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: auto;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+small{
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1rem, 1vw, 1.2rem);
+}
+
+footer ul{
+  padding: 0;
 }
