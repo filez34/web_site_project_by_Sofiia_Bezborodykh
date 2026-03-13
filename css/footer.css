@@ -7,24 +7,24 @@ footer {
   padding: 2vw;
 }
 
-footer ul li{
+footer ul li {
   list-style: none;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-kerning: auto;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
-small{
-    font-family: "Roboto Slab", serif;
+small {
+  font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 1vw, 1.2rem);
 }
 
-footer ul{
+footer ul {
   padding: 0;
 }

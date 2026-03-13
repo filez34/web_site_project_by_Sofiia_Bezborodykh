@@ -62,6 +62,7 @@ nav {
 .search {
   border-color: none;
   border-style: none;
+  border-radius: 2px;
   background-color: var(--background_color);
 }
 

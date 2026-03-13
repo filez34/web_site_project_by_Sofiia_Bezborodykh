@@ -1,12 +1,3 @@
-:root {
-  --accent_color: #fef683;
-  --background_color: white;
-  --off_white_color: rgb(240, 233, 233);
-  --dark_element_color: #50373c;
-  --primary_element_color: #f0905c;
-  --secondary_element_color: #c25848;
-}
-
 body {
   background-color: var(--background_color);
 }
@@ -87,13 +78,14 @@ aside {
   background-color: var(--off_white_color);
 }
 
-aside button {
+#add_to_cart {
   display: color;
   background-color: var(--secondary_element_color);
   height: 4rem;
   width: 60%;
   color: var(--background_color);
   border: none;
+  border-radius: 5px;
 }
 
 aside button:hover {
@@ -105,11 +97,15 @@ header {
   grid-area: header;
 }
 
+.footer_container {
+  grid-area: footer;
+}
+
 body {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 4rem 1fr;
-  grid-template-areas: "header header" "main aside";
+  grid-template-rows: minmax(0) 1fr 1fr;
+  grid-template-areas: "header header" "main aside" "footer footer";
   background-color: var(--background_color);
   margin: 0;
 }
@@ -117,7 +113,7 @@ body {
 @media screen and (max-width: 600px) {
   body {
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "aside";
+    grid-template-areas: "header" "main" "aside" "footer";
     grid-gap: 1vw;
   }
 }
